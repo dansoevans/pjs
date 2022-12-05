@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
                 session_start();
             $_SESSION['username'] = $username;
             $_SESSION['password'] = $password;
-                header('location:index.php');
+                header('location:index.html');
 
 
     }else{
@@ -82,6 +82,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
   </div>
  
   <button type="submit" class="btn btn-primary">Sign Up</button>
+  <div class="p lead mt-3">Already Have an Account? <a style="text-decoration: none;"  href="login.php">Login</a></div>
 </form>
     </div>
   </body>

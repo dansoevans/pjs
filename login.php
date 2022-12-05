@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
             $login = 1;
             session_start();
             $_SESSION['username'] = $username;
-            header('location:index.php');
+            header('location:index.html');
 
         } else {
             // echo ("invalid credentials");
